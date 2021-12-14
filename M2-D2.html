@@ -34,7 +34,8 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <!-- IMPORT ALL THE BOOTSTRAP RELATED CSS & SCRIPTS-->
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
     <style>
         /* EXERCISE 1
             For every Album displayed in the page we'd like to have a consistent appearence.
@@ -57,68 +58,243 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
 </head>
 
 <body>
-    <!-- EXERCISE 2 
-            Implement a navigation bar using the bootstrap component
-            This navigation bar must link every section in your page.
-        -->
+    <!-- <script src="index.js" defer></script> -->
 
-    <!-- EXERCISE 3
-            Create a responsive section for your favourite albums.
-            In this section you should have:
-            - 4 albums per row when the screen is very large
-            - 3 albums per row when you are on a tablet (or a smaller viewport)
-            - 2 albums per row when you are on a small screen
-        -->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="M2-D2.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-me">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#top-ablums">Top Albums</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#worst-ablums">Worst Albums</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
-    <!-- EXERCISE 4
-            Create a section for the album reviews.
-            Pick one of your favourite albums, and create a section with:
-            - Cover Image
-            - Title
-            - Band
-            - Duration
-            - Genre
-            - Tracklist
-            - ... And whatever you think it's interesting about it!
-        -->
 
-    <!-- EXERCISE 5
-            Worst album list! Choose the albums you dislike or some you think are overrated and list it
-            in this "hall of shame" chart! 
-        -->
+    <main class="container" >
+        <h1>My music</h1>
+        <a class="btn btn-primary" data-toggle="collapse" href="#my-bio" role="button" aria-expanded="false" aria-controls="collapseExample">
+            Hide/Show Section
+        </a>
+        <div id="my-bio">
+            <h2 id="about-me">My bio section</h2>
 
-    <!-- EXERCISE 6
-            Do you have any musician / band you admire or you are a fan of?
-            This section is dedicated to him / her / them!
-            Feel free to experiment in this part of the page.
-        -->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi perferendis dolores eos placeat cupiditate commodi, ratione dolorum id minima, totam facilis quam praesentium. Optio dolores illum necessitatibus! Fuga, modi tempora!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi perferendis dolores eos placeat cupiditate commodi, ratione dolorum id minima, totam facilis quam praesentium. Optio dolores illum necessitatibus! Fuga, modi tempora!</p>
+            
+            
+            
+            
+        </div>
+        <h2 id="top-ablums">Top albums of my life</h2>
+        <a class="btn btn-primary" data-toggle="collapse" href="#top-ablums-toggle" role="button" aria-expanded="false" aria-controls="collapseExample">
+            Hide/Show Section
+        </a>
+        <div id="top-ablums-toggle" class="row  row-cols-sm-1 row-cols-md-3 row-cols-lg-4 row-cols-xl-6 ">
+            <div class="py-5">
+            <div class="card">
+                <img src="https://picsum.photos/200" class="card-img-top img-fuild " alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Album Best of 2000's</h5>
+                <ul class="card-text">
+                    <li>Group: various</li>
+                    <li>Genre: mixed</li>
+                    <li>Duration: too long</li>
+                </ul>
+                
+                </div>
+            </div>
+            </div>
+            <div class="py-5">
+            <div class="card">
+                <img src="https://picsum.photos/210" class="card-img-top img-fuild " alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Album Best of 2010's</h5>
+                <ul class="card-text">
+                    <li>Group: various</li>
+                    <li>Genre: mixed</li>
+                    <li>Duration: too long</li>
+                </ul>
+                </div>
+            </div>
+            </div>
+            <div class="py-5">
+            <div class="card">
+                <img src="https://picsum.photos/220" class="card-img-top img-fuild " alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Album Best of 1990's</h5>
+                <ul class="card-text">
+                    <li>Group: various</li>
+                    <li>Genre: mixed</li>
+                    <li>Duration: too long</li>
+                </ul>
+                </div>
+            </div>
+            </div>
+            <div class="py-5">
+            <div class="card">
+                <img src="https://picsum.photos/240" class="card-img-top img-fuild " alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Card 1980</h5>
+                <ul class="card-text">
+                    <li>Group: various</li>
+                    <li>Genre: mixed</li>
+                    <li>Duration: too long</li>
+                </ul>
+                </div>
+                
+            </div>
+            </div>
+        
+        </div>
 
-    <!-- EXERCISE 7
-            Just covers!
-            Create a tapestry of album pictures. Every album picture must be "squared" (use CSS to achieve that).
-            Put at least 20 covers (also repeated) to have a nice tapestry effect and see how Bootstrap handles it.
-        -->
 
-    <!-- EXERCISE 8
-            Implement a footer with some information / social links.
-        -->
+        <h2 id="worst-ablums">Worst albums of my life</h2>
 
-    <!-- ############ EXTRA:
-        EXERCISE 9
-            Create an album details area which will be toggled on and off by clicking on the album image.
-        -->
+        
+        <div class="row  row-cols-sm-1 row-cols-md-2 row-cols-lg-4 row-cols-xl-6 ">
+            <div class="py-5">
+            <div class="card">
+                <img src="https://picsum.photos/200" class="card-img-top img-max " alt="...">
+                <div class="card-body">
+                <h5 class="card-title"> Worst of 2000's</h5>
+                <ul class="card-text">
+                    <li>Group: various</li>
+                    <li>Genre: mixed</li>
+                    <li>Duration: too long</li>
+                </ul>
+                
+                </div>
+            </div>
+            </div>
+            <div class="py-5">
+            <div class="card">
+                <img src="https://picsum.photos/210" class="card-img-top img-max " alt="...">
+                <div class="card-body">
+                <h5 class="card-title"> Worst of 2010's</h5>
+                <ul class="card-text">
+                    <li>Group: various</li>
+                    <li>Genre: mixed</li>
+                    <li>Duration: too long</li>
+                </ul>
+                </div>
+            </div>
+            </div>
+            <div class="py-5">
+            <div class="card">
+                <img src="https://picsum.photos/220" class="card-img-top img-max " alt="...">
+                <div class="card-body">
+                <h5 class="card-title"> Worst of 1990's</h5>
+                <ul class="card-text">
+                    <li>Group: various</li>
+                    <li>Genre: mixed</li>
+                    <li>Duration: too long</li>
+                </ul>
+                </div>
+            </div>
+            </div>
+            <div class="py-5">
+            <div class="card">
+                <img src="https://picsum.photos/240" class="card-img-top img-max " alt="...">
+                <div class="card-body">
+                <h5 class="card-title"> Worst of 1980</h5>
+                <ul class="card-text">
+                    <li>Group: various</li>
+                    <li>Genre: mixed</li>
+                    <li>Duration: too long</li>
+                </ul>
+                </div>
+                
+            </div>
+            </div>
+        
+        </div>
 
-    <!-- EXERCISE 10
-            Add a button to each section. By clicking on it the section body appears (if hidden) or disappears (if visible).
-            (hint: look for a boostrap component that can handle the job for you. You can always rely on DOM manipulation if you can't find it)
-        -->
+        <!-- EXERCISE 2 
+                Implement a navigation bar using the bootstrap component
+                This navigation bar must link every section in your page.
+            -->
 
-    <!--
-         EXERCISE 11
-            Add in the footer the number of how many ALBUMS are present on the page. 
-            Create the JavaScript logic that runs when the page finished loading and 
-            counts the albums and applies the number in the area of the footer you've previously decided.
-        -->
+        <!-- EXERCISE 3
+                Create a responsive section for your favourite albums.
+                In this section you should have:
+                - 4 albums per row when the screen is very large
+                - 3 albums per row when you are on a tablet (or a smaller viewport)
+                - 2 albums per row when you are on a small screen
+            -->
+
+        <!-- EXERCISE 4
+                Create a section for the album reviews.
+                Pick one of your favourite albums, and create a section with:
+                - Cover Image
+                - Title
+                - Band
+                - Duration
+                - Genre
+                - Tracklist
+                - ... And whatever you think it's interesting about it!
+            -->
+
+        <!-- EXERCISE 5
+                Worst album list! Choose the albums you dislike or some you think are overrated and list it
+                in this "hall of shame" chart! 
+            -->
+
+        <!-- EXERCISE 6
+                Do you have any musician / band you admire or you are a fan of?
+                This section is dedicated to him / her / them!
+                Feel free to experiment in this part of the page.
+            -->
+
+        <!-- EXERCISE 7
+                Just covers!
+                Create a tapestry of album pictures. Every album picture must be "squared" (use CSS to achieve that).
+                Put at least 20 covers (also repeated) to have a nice tapestry effect and see how Bootstrap handles it.
+            -->
+
+        <!-- EXERCISE 8
+                Implement a footer with some information / social links.
+            -->
+
+        <!-- ############ EXTRA:
+            EXERCISE 9
+                Create an album details area which will be toggled on and off by clicking on the album image.
+            -->
+
+        <!-- EXERCISE 10
+                Add a button to each section. By clicking on it the section body appears (if hidden) or disappears (if visible).
+                (hint: look for a boostrap component that can handle the job for you. You can always rely on DOM manipulation if you can't find it)
+            -->
+
+        <!--
+            EXERCISE 11
+                Add in the footer the number of how many ALBUMS are present on the page. 
+                Create the JavaScript logic that runs when the page finished loading and 
+                counts the albums and applies the number in the area of the footer you've previously decided.
+            -->
+
+            <div class="js-list-container"> <!-- list pushed by JavaScript from index.js --></div>
+    </main>
+
+    <footer class="p-5 navbar-dark bg-dark ">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ut vitae provident repellat, dolorem necessitatibus aliquid, qui quibusdam ipsum repellendus accusamus voluptatem voluptatum iste illum vel cupiditate quos? Ipsa, nobis?</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 </body>
 
 </html>
